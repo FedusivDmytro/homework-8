@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.container {
+    max-width: 1048px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    min-height: 83px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    background-color: #fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0c0e36;
+    padding-left: 15px;
+    margin-right: 30%;
+}
+
+.header__menu {
+    padding-right: 0;
+}
+
+.header__menu ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none; 
+}
+
+.header__menu li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.header__menu li a {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0C0E36;
+    text-decoration: none;
+}
+
+.weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 83px;
+    display: flex;
+}
+
+.weather__icon {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f70058;
+}
+
+.icon-cloud-sun {
+    background-image: url("../img/icon-cloud-sun.png");
+    width: 51px;
+    height: 54px;
+}
+
+.weather__info {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 13px 17px 8px;
+    list-style: none;
+    background-color: #0c0e36;
+}
+
+.weather__info li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2px;
+}
+
+.weather__info li:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8a8a9d;
+    margin-bottom: 10px;
+}
+
+.weather__info span {
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 13px;
+}
+
+.weather__info b {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.hero {
+    background-image: url('../img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: skyblue;
+    background-size: cover;
+}
+
+.hero .container {
+    min-height: calc(100vh - 81px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero .container h3 {
+    font-size: 48px;
+    line-height: 102%;
+    font-weight: 900;
+    color: #0C0E36;
+    width: 500px;
+    margin-bottom: 45px;
+}
+
+.hero .container p{
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    color: #3A3A3A;
+    width: 610px;
+    margin-bottom: 65px;
+}
+
+.hero .buy-options {
+    display: flex;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.hero .seasons-pass, .tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: Bold;
+    text-transform: uppercase;
+    width: 240px;
+    height: 49px;
+    margin-right: 23px;
+    color: #FFFFFF;
+    background-color: #F70058;
+}
+
+.hero .tickets {
+    border: 5px solid #F70058;
+    width: 167px;
+    height: 49px;
+    color: #F70058;
+    background-color: transparent;
+}
